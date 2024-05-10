@@ -21,7 +21,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
 
       - name: Build Docker image
-        run: docker build . --file Dockerfile -t guihadyossry/lab3GHactions:latest 
+        run: docker build . --file Dockerfile -t guihadyossry/lab3githubactions:latest 
 
       - name: Push Docker image
-        run: docker push guihadyossry/lab3GHactions:latest 
+        run: docker push guihadyossry/lab3githubactions:latest 
